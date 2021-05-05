@@ -10,6 +10,12 @@
   margin-left: 9px;
 }
 
+@media (max-width: 700px) {
+#marcas{
+  display: none;
+}
+}
+
 .dropdown-item.active,
 .dropdown-item:active {
   background-color: white;
