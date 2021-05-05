@@ -1,0 +1,261 @@
+.imgProductos {
+  max-height: 11.5em;
+}
+
+.imgcarousel {
+  max-height: 40.5em;
+}
+
+#numeroCarrito {
+  margin-left: 9px;
+}
+
+.dropdown-item.active,
+.dropdown-item:active {
+  background-color: white;
+  color: black;
+}
+
+#textoTotalCarrito {
+  margin-left: 1em;
+  color: white;
+}
+
+.titulo-card {
+  display: flex;
+  background-color: white;
+  justify-content: space-between;
+}
+
+.imgCarrito {
+  display: flex;
+  max-width: 2.3rem;
+}
+
+.fotoYTexto {
+  display: flex;
+}
+
+.eliminarTop {
+  display: flex;
+  background-color: red;
+  max-height: 2.2rem;
+}
+
+#icono-carrito {
+  border: none;
+  color: gold;
+  font-size: 30px;
+  background-color: #343a40;
+  padding: 5px 10px;
+}
+
+#icono-carrito:hover {
+  cursor: pointer;
+  color: black;
+  background-color: gold;
+}
+
+.cantidad {
+  margin-left: 1.2rem;
+  font-size: 20px;
+  font-weight: 500;
+  color: #007bff;
+}
+
+#precioTotal {
+  font-family: Montserrat, sans-serif;
+  color: royalblue;
+  font-size: 25px;
+}
+
+#marcasUno {
+  background-color: #00b4d8;
+  font-size: larger;
+  color: black;
+  font-family: Montserrat, sans-serif;
+}
+
+#marcasUno:hover {
+  background-color: lightgreen;
+}
+
+#marcasDos {
+  background-color: #00b4d8;
+  font-size: larger;
+  color: black;
+  font-family: Montserrat, sans-serif;
+}
+#marcasDos:hover {
+  background-color: lightgreen;
+}
+
+#marcasTres {
+  background-color: #00b4d8;
+  font-size: larger;
+  color: black;
+  font-family: Montserrat, sans-serif;
+}
+#marcasTres:hover {
+  background-color: lightgreen;
+}
+
+#marcasCuatro {
+  background-color: #00b4d8;
+  font-size: larger;
+  color: black;
+  font-family: Montserrat, sans-serif;
+}
+#marcasCuatro:hover {
+  background-color: lightgreen;
+}
+
+.btnComprar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  box-sizing: border-box;
+  border: none;
+  font-family: Montserrat, sans-serif;
+  transition: all 0.4s ease 0s;
+  background-color: rgb(29, 165, 11);
+  color: rgb(255, 255, 255);
+  padding: 0.6rem 0.9rem;
+  border-radius: 10px;
+  font-size: 1.1rem;
+}
+
+.btnEliminar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  box-sizing: border-box;
+  border: none;
+  font-family: Montserrat, sans-serif;
+  transition: all 0.4s ease 0s;
+  background-color: red;
+  color: rgb(255, 255, 255);
+  padding: 0.6rem 0.9rem;
+  border-radius: 10px;
+  font-size: 1.1rem;
+  margin-top: 2px;
+}
+
+.btnSort {
+  border: solid 1px;
+  font-family: Montserrat, sans-serif;
+  transition: all 0.4s ease 0s;
+  background-color: rgb(112, 138, 251);
+  color: rgb(255, 255, 255);
+  padding: 0.6rem 0.9rem;
+  margin-bottom: 0.5rem;
+  border-radius: 10px;
+  font-size: 1.1rem;
+}
+
+.btnSort:hover {
+  background-color: purple;
+}
+
+.btnBorrar {
+  border: solid 1px;
+  font-family: Montserrat, sans-serif;
+  transition: all 0.4s ease 0s;
+  background-color: rgb(112, 138, 251);
+  color: rgb(255, 255, 255);
+  padding: 0.6rem 0.9rem;
+  margin-bottom: 0.5rem;
+  border-radius: 10px;
+  font-size: 1.1rem;
+}
+
+.btnBorrar:hover {
+  background-color: red;
+}
+
+.modal-contenedor {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.3);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  visibility: hidden;
+  z-index: 1;
+}
+
+.modal-active {
+  opacity: 1;
+  visibility: visible;
+}
+
+.carritoOverflow {
+  overflow: scroll;
+}
+
+.modal-carrito {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  height: 90vh;
+  min-width: 30rem;
+  padding: 20px;
+  margin-top: -100%;
+}
+
+.modal-active .modal-carrito {
+  margin-top: 0;
+}
+
+.modal-carrito h3 {
+  color: royalblue;
+  padding-bottom: 5px;
+}
+.modal-carrito #carritoCerrar {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  font-size: 30px;
+  color: royalblue;
+  border: none;
+  background-color: white;
+}
+.modal-carrito #carritoCerrar:hover {
+  cursor: pointer;
+}
+.modal-carrito #carritoCerrar:focus {
+  outline: none;
+}
+
+.avanzar {
+  width: 30rem;
+  border: solid 1px;
+  font-family: Montserrat, sans-serif;
+  transition: all 0.4s ease 0s;
+  background-color: green;
+  color: rgb(255, 255, 255);
+  padding: 0.6rem 0.9rem;
+  margin-bottom: 0.5rem;
+  border-radius: 10px;
+  font-size: 1rem;
+}
+
+.vaciarCarrito {
+  width: 30rem;
+  border: solid 1px;
+  font-family: Montserrat, sans-serif;
+  transition: all 0.4s ease 0s;
+  background-color: red;
+  color: rgb(255, 255, 255);
+  padding: 0.6rem 0.9rem;
+  margin-bottom: 0.5rem;
+  border-radius: 10px;
+  font-size: 1rem;
+}
