@@ -5,7 +5,7 @@ let carrito = [];
 
 if (valorCarritoStorage == null) {
   carrito = [];
-  document.getElementById("numeroCarrito").innerHTML = carrito.length;
+  $("#numeroCarrito").html(carrito.length);
 } else {
   carrito = JSON.parse(valorCarritoStorage);
 }
@@ -19,24 +19,23 @@ function renderearCards() {
   for (let i = 0; i < productos.length; i++) {
     acumuladorCardsHome += `<div class="col-lg-4 col-md-6 mb-4">
     <div class="card h-100">
-    <a href="#"><img class="card-img-top imgProductos" src="${
-      productos[i].imagen
-    }" alt=""></a>
+    <a href="#"><img class="card-img-top imgProductos" src="${productos[i].imagen
+      }" alt=""></a>
     <div class="card-body">
     <h4 class="card-title">
     <a href="#">${productos[i].nombre}</a>
     </h4>
     <h5> ${productos[i].precio.toLocaleString("es-AR", {
-      style: "currency",
-      currency: "ARS",
-      minimumFractionDigits: 0,
-    })}</h5>
+        style: "currency",
+        currency: "ARS",
+        minimumFractionDigits: 0,
+      })}</h5>
     <p class="card-text">${productos[i].descripcion}</p>
     </div>
       <div class="card-footer">
     <button class="btnComprar" onclick='agregarCarrito(${JSON.stringify(
-      productos[i].id
-    )})'>Agregar al carrito</button>
+        productos[i].id
+      )})'>Agregar al carrito</button>
       <button class="btnEliminar" onclick='eliminarProducto(${JSON.stringify(
         productos[i].id
       )})'>Eliminar del carrito</button>
@@ -44,7 +43,7 @@ function renderearCards() {
     </div>
     </div>`;
   }
-  document.getElementById("productos").innerHTML = acumuladorCardsHome;
+  $("#productos").html(acumuladorCardsHome);
 }
 renderearCards();
 
@@ -72,12 +71,12 @@ function agregarCarrito(productoId) {
 
 function eliminarProducto(itemId) {
   let productoAEliminar = carrito.find((producto) => producto.id == itemId);
-if (productoAEliminar){
-  productoAEliminar.cantidad--
-  if (productoAEliminar.cantidad == 0) {
-    let indice = carrito.indexOf(productoAEliminar);
-    carrito.splice(indice, 1);
-}
+  if (productoAEliminar) {
+    productoAEliminar.cantidad--;
+    if (productoAEliminar.cantidad == 0) {
+      let indice = carrito.indexOf(productoAEliminar);
+      carrito.splice(indice, 1);
+    }
   }
   localStorage.carrito = JSON.stringify(carrito);
   popUpCarrito();
@@ -86,7 +85,6 @@ if (productoAEliminar){
 function validarStock(stock) {
   return stock > 0;
 }
-
 
 function popUpCarrito() {
   let productosEnCarrito = "";
@@ -125,10 +123,10 @@ function popUpCarrito() {
     <div class="card-body text-primary">
       <h5 class="card-title">
         Precio x unidad ${carrito[i].precio.toLocaleString("es-AR", {
-          style: "currency",
-          currency: "ARS",
-          minimumFractionDigits: 0,
-        })}
+      style: "currency",
+      currency: "ARS",
+      minimumFractionDigits: 0,
+    })}
       </h5>
     </div>
     <div class="cantidad">Cantidad: ${carrito[i].cantidad}</div>
@@ -140,28 +138,24 @@ function popUpCarrito() {
     numeroCarrito += 1;
   }
 
-  document.getElementById("productosCarrito").innerHTML = productosEnCarrito;
-  document.getElementById("numeroCarrito").innerHTML = carrito.reduce(
-    (acc, producto) => (acc += producto.cantidad),
-    0
+  //Jquery al HTML
+  $("#productosCarrito").html(productosEnCarrito);
+  $("#numeroCarrito").html(
+    carrito.reduce((acc, producto) => (acc += producto.cantidad), 0)
   );
-  document.getElementById(
-    "precioTotal"
-  ).innerHTML = `El total de tu compra es de ${totalCarrito.toLocaleString(
-    "es-AR",
-    {
+  $("#precioTotal").html(
+    `El total de tu compra es de ${totalCarrito.toLocaleString("es-AR", {
       style: "currency",
       currency: "ARS",
       minimumFractionDigits: 0,
-    }
-  )}`;
-  document.getElementById(
-    "textoTotalCarrito"
-  ).innerHTML = `Total: ${totalCarrito.toLocaleString("es-AR", {
+    })}`
+  );
+  $("#textoTotalCarrito").html(`Total: ${totalCarrito.toLocaleString("es-AR", {
     style: "currency",
     currency: "ARS",
     minimumFractionDigits: 0,
-  })}`;
+  })}`
+  );
 }
 popUpCarrito();
 

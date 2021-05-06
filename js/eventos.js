@@ -1,68 +1,40 @@
 //Eventos para filtrar por marca, precio y nombre
 
-const sortMarcaUno = document.getElementById('marcasUno');
-const sortMarcaDos = document.getElementById('marcasDos');
-const sortMarcaTres = document.getElementById('marcasTres');
-const sortMarcaCuatro = document.getElementById('marcasCuatro');
+$("#marcasUno").on("click", () => filtrarMarcas("Apple"))
 
-sortMarcaUno.addEventListener('click', ()=> {
-    filtrarMarcas('Apple')
-})
+$("#marcasDos").on("click", () => filtrarMarcas("Samsung"))
 
-sortMarcaDos.addEventListener('click', ()=> {
-    filtrarMarcas('Samsung')
-})
+$("#marcasTres").on("click", () => filtrarMarcas("Sony"))
 
-sortMarcaTres.addEventListener('click', ()=> {
-    filtrarMarcas('Sony')
-})
+$("#marcasCuatro").on("click", () => filtrarMarcas("Todas"))
 
-sortMarcaCuatro.addEventListener('click', ()=> {
-    filtrarMarcas('Todas')
-})
+$("#sortCaros").on("click", () => sortCards("Caros"))
 
+$("#sortBaratos").on("click", () => sortCards("Baratos"))
 
-const sortCaros = document.getElementById('sortCaros')
-const sortBaratos = document.getElementById('sortBaratos')
-const sortNombre = document.getElementById('sortNombre')
-const sortBorrar = document.getElementById('sortBorrar')
+$("#sortNombre").on("click", () => sortCards("Nombre"))
 
-
-sortCaros.addEventListener('click', ()=> {
-    sortCards('Caros')
-})
-
-sortBaratos.addEventListener('click', ()=> {
-    sortCards('Baratos')
-})
-
-sortNombre.addEventListener('click', ()=> {
-    sortCards('Nombre')
-})
-
-sortBorrar.addEventListener('click', ()=> {
-    sortCards('Borrar')
-})
+$("#sortBorrar").on("click", () => sortCards("Borrar"))
 
 
 //Eventos del modal
 
-const carritoAbrir = document.getElementById('icono-carrito');
-const carritoCerrar = document.getElementById('carritoCerrar');
+const carritoAbrir = document.getElementById("icono-carrito");
+const carritoCerrar = document.getElementById("carritoCerrar");
 
-const contenedorModal = document.getElementsByClassName('modal-contenedor')[0]
-const modalCarrito = document.getElementsByClassName('modal-carrito')[0]
+const contenedorModal = document.getElementsByClassName("modal-contenedor")[0];
+const modalCarrito = document.getElementsByClassName("modal-carrito")[0];
 
-carritoAbrir.addEventListener('click', ()=> {
-    contenedorModal.classList.toggle('modal-active')
-})
-carritoCerrar.addEventListener('click', ()=> {
-    contenedorModal.classList.toggle('modal-active')
-})
-modalCarrito.addEventListener('click',(e)=>{
-    e.stopPropagation()
-})
+carritoAbrir.addEventListener("click", () => {
+    contenedorModal.classList.toggle("modal-active");
+});
+carritoCerrar.addEventListener("click", () => {
+    contenedorModal.classList.toggle("modal-active");
+});
+modalCarrito.addEventListener("click", (e) => {
+    e.stopPropagation();
+});
 
-contenedorModal.addEventListener('click', ()=>{
-    carritoCerrar.click()
-})
+contenedorModal.addEventListener("click", () => {
+    carritoCerrar.click();
+});
