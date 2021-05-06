@@ -36,9 +36,6 @@ function renderearCards() {
     <button class="btnComprar" onclick='agregarCarrito(${JSON.stringify(
         productos[i].id
       )})'>Agregar al carrito</button>
-      <button class="btnEliminar" onclick='eliminarProducto(${JSON.stringify(
-        productos[i].id
-      )})'>Eliminar del carrito</button>
     </div>
     </div>
     </div>`;

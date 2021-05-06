@@ -16,6 +16,11 @@
 }
 }
 
+#titulo {
+  padding-top:35px;
+}
+
+
 .dropdown-item.active,
 .dropdown-item:active {
   background-color: white;
@@ -75,52 +80,49 @@
   font-size: 25px;
 }
 
-#marcasUno {
+#Apple {
   background-color: #00b4d8;
   font-size: larger;
   color: black;
   font-family: Montserrat, sans-serif;
 }
 
-#marcasUno:hover {
+#Apple:hover {
   background-color: lightgreen;
 }
 
-#marcasDos {
+#Samsung {
   background-color: #00b4d8;
   font-size: larger;
   color: black;
   font-family: Montserrat, sans-serif;
 }
-#marcasDos:hover {
+#Samsung:hover {
   background-color: lightgreen;
 }
 
-#marcasTres {
+#Sony {
   background-color: #00b4d8;
   font-size: larger;
   color: black;
   font-family: Montserrat, sans-serif;
 }
-#marcasTres:hover {
+#Sony:hover {
   background-color: lightgreen;
 }
 
-#marcasCuatro {
+#Todas {
   background-color: #00b4d8;
   font-size: larger;
   color: black;
   font-family: Montserrat, sans-serif;
 }
-#marcasCuatro:hover {
+#Todas:hover {
   background-color: lightgreen;
 }
 
 .btnComprar {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
+  text-align:center;
   width: 100%;
   box-sizing: border-box;
   border: none;

@@ -1,12 +1,13 @@
 //Eventos para filtrar por marca, precio y nombre
 
-$("#marcasUno").on("click", () => filtrarMarcas("Apple"))
+// $("#Apple").on("click", () => filtrarMarcas("Apple"))
+// $(`${marca}`).on("click", () => filtrarMarcas(marca))
 
-$("#marcasDos").on("click", () => filtrarMarcas("Samsung"))
+$("#Samsung").on("click", () => filtrarMarcas("Samsung"))
 
-$("#marcasTres").on("click", () => filtrarMarcas("Sony"))
+$("#Sony").on("click", () => filtrarMarcas("Sony"))
 
-$("#marcasCuatro").on("click", () => filtrarMarcas("Todas"))
+$("#Todas").on("click", () => filtrarMarcas("Todas"))
 
 $("#sortCaros").on("click", () => sortCards("Caros"))
 
