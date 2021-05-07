@@ -1,6 +1,6 @@
 //Eventos para filtrar por marca, precio y nombre
 
-// $("#Apple").on("click", () => filtrarMarcas("Apple"))
+$("#Apple").on("click", () => filtrarMarcas("Apple"))
 // $(`${marca}`).on("click", () => filtrarMarcas(marca))
 
 $("#Samsung").on("click", () => filtrarMarcas("Samsung"))
