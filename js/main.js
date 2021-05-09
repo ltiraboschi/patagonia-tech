@@ -132,7 +132,6 @@ function popUpCarrito() {
     `;
 
     totalCarrito += carrito[i].precio * carrito[i].cantidad;
-    numeroCarrito += 1;
   }
 
   //Jquery al HTML

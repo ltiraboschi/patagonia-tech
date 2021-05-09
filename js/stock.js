@@ -38,7 +38,7 @@ productosRaw.push(
     2,
     "Nintendo Switch ",
     100000,
-    "imagenes/switch.png",
+    "imagenes/switch.jpg",
     "La consola que revolucionó el gaming. Con la Nintendo Switch jugá en tu casa, o donde quieras.",
     "Xiaomi",
     20
@@ -49,7 +49,7 @@ productosRaw.push(
     3,
     "Motorola G7",
     20000,
-    "imagenes/motog5.png",
+    "imagenes/motog7.jpg",
     "El Moto G7 es el teléfono ideal para quienes quieran un gran teléfono a bajo precio.",
     "Xiaomi",
     40
@@ -60,7 +60,7 @@ productosRaw.push(
     4,
     "Samsung S8",
     30000,
-    "imagenes/samsungS8.png",
+    "imagenes/samsungS8.jpg",
     "El Xiaomi Redmi Note 9 es el rey en calidad/precio.",
     "Samsung",
     40
@@ -71,7 +71,7 @@ productosRaw.push(
     5,
     "iPad Mini",
     90000,
-    "imagenes/ipadmini.png",
+    "imagenes/ipadmini.jpg",
     "El iPad mini tiene el chip A12 Bionic y pantalla Retina de 7.9 pulgadas en un diseño compacto.",
     "Apple",
     40
@@ -104,7 +104,7 @@ productosRaw.push(
     8,
     "Sony PS4",
     45000,
-    "imagenes/ps4.png",
+    "imagenes/ps4.jpg",
     "La consola más vendida de su generación .",
     "Sony",
     12
@@ -115,7 +115,7 @@ productosRaw.push(
     9,
     "Macbook Pro",
     205000,
-    "imagenes/macbookpro.png",
+    "imagenes/macbookpro.jpg",
     "Macbook Pro calidad/precio.",
     "Apple",
     8
@@ -126,7 +126,7 @@ productosRaw.push(
     10,
     "Cámara Sony H30",
     52000,
-    "imagenes/sonyh30.png",
+    "imagenes/sonyh30.jpg",
     "La mejor calidad de imagen con la facilidad de uso de una cámara compacta.",
     "Sony",
     10
