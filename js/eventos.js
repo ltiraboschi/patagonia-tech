@@ -1,9 +1,21 @@
 //Eventos para filtrar por marca, precio y nombre
 
-$("#Apple").on("click", () => filtrarMarcas("Apple"))
-$("#Samsung").on("click", () => filtrarMarcas("Samsung"))
-$("#Sony").on("click", () => filtrarMarcas("Sony"))
-$("#Todas").on("click", () => filtrarMarcas("Todas"))
+$("#Apple").on("click" , (e) =>{
+    e.preventDefault()
+    filtrarMarcas("Apple")
+})
+$("#Samsung").on("click", (e) => {
+    e.preventDefault()
+    filtrarMarcas("Samsung")})
+
+$("#Sony").on("click", (e) => {
+    e.preventDefault()
+    filtrarMarcas("Sony")})
+
+$("#Todas").on("click", (e) =>{
+    e.preventDefault()
+    filtrarMarcas("Todas")
+})
 
 $("#sortCaros").on("click", () => sortCards("Caros"))
 $("#sortBaratos").on("click", () => sortCards("Baratos"))

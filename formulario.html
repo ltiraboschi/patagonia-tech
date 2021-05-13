@@ -93,11 +93,10 @@
         </div>
         <div class="mb-3">
           <label for="email">Correo electrónico</label>
-          <input type="email" class="form-control" id="email" placeholder="Ingrese su correo electrónico">
+          <input type="email" class="form-control" id="address" placeholder="Ingrese su correo electrónico" required> 
           <div class="invalid-feedback">
             Ingrese su correo electrónico </div>
         </div>
-
         <div class="mb-3">
           <label for="address">Dirección</label>
           <input type="text" class="form-control" id="address" placeholder="Ingrese su dirección" required>
@@ -132,15 +131,13 @@ Ingrese su provincia            </div>
             <input type="text" class="form-control" id="cc-name" placeholder="" required>
             <small class="text-muted">Ingrese el nombre tal cual aparece en su tarjeta</small>
             <div class="invalid-feedback">
-              Name on card is required
-            </div>
+Se requiere el nombre             </div>
           </div>
           <div class="col-md-6 mb-3">
             <label for="cc-number">Número de su tarjeta de crédito</label>
             <input type="text" class="form-control" id="cc-number" placeholder="" required>
             <div class="invalid-feedback">
-              Credit card number is required
-            </div>
+Se requiere el número de su tarjeta            </div>
           </div>
         </div>
         <div class="row">
@@ -178,6 +175,8 @@ Ingrese su provincia            </div>
   <script src="js/stock.js"></script>
   <script src="js/main.js"></script>
   <script src="js/eventos.js"></script>
+  <script src="js/formulario.js"></script>
+
 
   <!-- Bootstrap core JavaScript -->
   <script src="vendor/jquery/jquery.min.js"></script>
