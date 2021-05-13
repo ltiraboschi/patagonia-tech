@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>Patagonia Tech</title>
+
+
+  <!-- Bootstrap core CSS -->
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+    crossorigin="anonymous" />
+  <!-- Custom styles for this template -->
+  <link href="css/shop-homepage.css" rel="stylesheet">
+  <link href="css/estilos.css" rel="stylesheet">
+
+</head>
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+  <div class="container">
+    <a class="navbar-brand" href="#">Patagonia Tech</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive"
+      aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarResponsive">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="https://ltiraboschi.github.io/patagonia-tech/">Inicio
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Sobre Nosotros</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Contacto</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <button id="icono-carrito"><i class="fas fa-shopping-cart"></i><span id="numeroCarrito"></span></button>
+  <div class="modal-contenedor">
+    <div class="modal-carrito">
+      <div class="tituloCarrito">
+        <h3>Carrito</h3>
+        <button id="carritoCerrar"><i class="fas fa-times-circle"></i></button>
+      </div>
+      <div class="carritoOverflow">
+        <div id="carrito-contenedor">
+          <div class="productoEnCarrito" id="productosCarrito">
+          </div>
+        </div>
+      </div>
+      <div class="botones">
+        <div id="avanzar"></div>
+        <div id="vaciarCarrito"></div>
+        <p class="precioProducto"><span id="precioTotal"></span></p>
+      </div>
+    </div>
+  </div>
+  <div id="textoTotalCarrito">
+  </div>
+</nav>
+
+</div>
+
+
+
+<body>
+
+  <div class="row formulario">
+    <div class="col-md-8 order-md-1 mx-auto">
+      <h4 class="mb-3">Datos para el envío de su compra</h4>
+      <form class="needs-validation" novalidate>
+        <div class="row">
+          <div class="col-md-6 mb-3">
+            <label for="firstName">Nombre</label>
+            <input type="text" class="form-control" id="firstName" placeholder="" value="" required>
+            <div class="invalid-feedback">
+              Ingrese su nombre </div>
+          </div>
+          <div class="col-md-6 mb-3">
+            <label for="lastName">Apellido</label>
+            <input type="text" class="form-control" id="lastName" placeholder="" value="" required>
+            <div class="invalid-feedback">
+              Ingrese su apellido </div>
+          </div>
+        </div>
+        <div class="mb-3">
+          <label for="email">Correo electrónico</label>
+          <input type="email" class="form-control" id="email" placeholder="Ingrese su correo electrónico">
+          <div class="invalid-feedback">
+            Ingrese su correo electrónico </div>
+        </div>
+
+        <div class="mb-3">
+          <label for="address">Dirección</label>
+          <input type="text" class="form-control" id="address" placeholder="Ingrese su dirección" required>
+          <div class="invalid-feedback">
+            Escriba su dirección de envío.
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-5 mb-3">
+            <label for="address">Provincia</label>
+            <input type="text" class="form-control" id="address" placeholder="Ingrese su provincia" required>
+            <div class="invalid-feedback">
+Ingrese su provincia            </div>
+          </div>
+          <div class="col-md-3 mb-3">
+            <label for="zip">Código Postal</label>
+            <input type="text" class="form-control" id="zip" placeholder="" required>
+            <div class="invalid-feedback">
+              Código Postal requerido.
+            </div>
+          </div>
+          <div class="row">
+          </div>
+        </div>
+        <!-- <hr class="mb-4"> -->
+        <hr class="mb-4">
+
+        <h4 class="mb-3">Información sobre el pago</h4>
+        <div class="row">
+          <div class="col-md-6 mb-3">
+            <label for="cc-name">Nombre completo</label>
+            <input type="text" class="form-control" id="cc-name" placeholder="" required>
+            <small class="text-muted">Ingrese el nombre tal cual aparece en su tarjeta</small>
+            <div class="invalid-feedback">
+              Name on card is required
+            </div>
+          </div>
+          <div class="col-md-6 mb-3">
+            <label for="cc-number">Número de su tarjeta de crédito</label>
+            <input type="text" class="form-control" id="cc-number" placeholder="" required>
+            <div class="invalid-feedback">
+              Credit card number is required
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-3 mb-3">
+            <label for="cc-expiration">Fecha de expiración de su tarjeta</label>
+            <input type="text" class="form-control" id="cc-expiration" placeholder="" required>
+            <div class="invalid-feedback">
+              Ingrese la fecha de expiración de su tarjeta </div>
+          </div>
+          <div class="col-md-3 mb-3">
+            <label for="cc-cvv">Código de seguridad</label>
+            <input type="text" class="form-control" id="cc-cvv" placeholder="" required>
+            <div class="invalid-feedback">
+              Ingrese su Código de seguridad
+            </div>
+          </div>
+        </div>
+        <hr class="mb-4">
+        <button class="btn btn-primary btn-lg btn-block mb-3" type="submit">Finalizar compra</button>
+      </form>
+    </div>
+  </div>
+
+
+
+  <!-- Footer -->
+  <footer class="py-5 bg-dark">
+    <div class="container">
+      <p class="m-0 text-center text-white">Copyright &copy; Patagonia Tech 2021</p>
+    </div>
+    <!-- /.container -->
+  </footer>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+  <script src="js/stock.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/eventos.js"></script>
+
+  <!-- Bootstrap core JavaScript -->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>

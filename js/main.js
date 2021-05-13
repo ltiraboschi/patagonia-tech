@@ -90,7 +90,8 @@ function popUpCarrito() {
   if (carrito.length >= 1) {
     document.getElementById(
       "avanzar"
-    ).innerHTML = `<button class="avanzar">Avanzar con la compra</button>`;
+    ).innerHTML = `<a href="formulario.html">
+   <button class="avanzar">Avanzar con la compra</button></a>`;
     document.getElementById(
       "vaciarCarrito"
     ).innerHTML = `<button onclick='vaciarCarrito()' class="vaciarCarrito">Vaciar carrito</button>`;
