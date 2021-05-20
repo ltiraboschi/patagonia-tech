@@ -43,3 +43,7 @@ $(".modal-carrito").on("click",  (e) => {
 $(".modal-contenedor").on("click",  () => {
     carritoCerrar.click();
 });
+
+
+//Pagar con Mercado Pago
+$(".mercadopago").on("click", () => validar())

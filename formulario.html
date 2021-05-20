@@ -76,30 +76,30 @@
   <div class="row formulario">
     <div class="col-md-8 order-md-1 mx-auto">
       <h4 class="mb-3">Datos para el envío de su compra</h4>
-      <form class="needs-validation" novalidate>
+      <form action="comprafinalizada.html" class="needs-validation" novalidate>
         <div class="row">
           <div class="col-md-6 mb-3">
             <label for="firstName">Nombre</label>
-            <input type="text" class="form-control" id="firstName" placeholder="" value="" required>
+            <input type="text" class="form-control" name="nombre" id="firstName" placeholder="" value="" required>
             <div class="invalid-feedback">
               Ingrese su nombre </div>
           </div>
           <div class="col-md-6 mb-3">
             <label for="lastName">Apellido</label>
-            <input type="text" class="form-control" id="lastName" placeholder="" value="" required>
+            <input type="text" class="form-control" name="apellido" id="lastName" placeholder="" value="" required>
             <div class="invalid-feedback">
               Ingrese su apellido </div>
           </div>
         </div>
         <div class="mb-3">
           <label for="email">Correo electrónico</label>
-          <input type="email" class="form-control" id="address" placeholder="Ingrese su correo electrónico" required> 
+          <input type="email" class="form-control" name="mail" id="mail" placeholder="Ingrese su correo electrónico" required> 
           <div class="invalid-feedback">
             Ingrese su correo electrónico </div>
         </div>
         <div class="mb-3">
           <label for="address">Dirección</label>
-          <input type="text" class="form-control" id="address" placeholder="Ingrese su dirección" required>
+          <input type="text" class="form-control" name="direccion" id="address" placeholder="Ingrese su dirección" required>
           <div class="invalid-feedback">
             Escriba su dirección de envío.
           </div>
@@ -107,13 +107,13 @@
         <div class="row">
           <div class="col-md-5 mb-3">
             <label for="address">Provincia</label>
-            <input type="text" class="form-control" id="address" placeholder="Ingrese su provincia" required>
+            <input type="text" class="form-control" name="provincia" id="provincia" placeholder="Ingrese su provincia" required>
             <div class="invalid-feedback">
 Ingrese su provincia            </div>
           </div>
           <div class="col-md-3 mb-3">
             <label for="zip">Código Postal</label>
-            <input type="text" class="form-control" id="zip" placeholder="" required>
+            <input type="text" class="form-control" name="codigopostal" id="zip" placeholder="" required>
             <div class="invalid-feedback">
               Código Postal requerido.
             </div>
@@ -121,42 +121,8 @@ Ingrese su provincia            </div>
           <div class="row">
           </div>
         </div>
-        <!-- <hr class="mb-4"> -->
         <hr class="mb-4">
-
-        <h4 class="mb-3">Información sobre el pago</h4>
-        <div class="row">
-          <div class="col-md-6 mb-3">
-            <label for="cc-name">Nombre completo</label>
-            <input type="text" class="form-control" id="cc-name" placeholder="" required>
-            <small class="text-muted">Ingrese el nombre tal cual aparece en su tarjeta</small>
-            <div class="invalid-feedback">
-Se requiere el nombre             </div>
-          </div>
-          <div class="col-md-6 mb-3">
-            <label for="cc-number">Número de su tarjeta de crédito</label>
-            <input type="text" class="form-control" id="cc-number" placeholder="" required>
-            <div class="invalid-feedback">
-Se requiere el número de su tarjeta            </div>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-md-3 mb-3">
-            <label for="cc-expiration">Fecha de expiración de su tarjeta</label>
-            <input type="text" class="form-control" id="cc-expiration" placeholder="" required>
-            <div class="invalid-feedback">
-              Ingrese la fecha de expiración de su tarjeta </div>
-          </div>
-          <div class="col-md-3 mb-3">
-            <label for="cc-cvv">Código de seguridad</label>
-            <input type="text" class="form-control" id="cc-cvv" placeholder="" required>
-            <div class="invalid-feedback">
-              Ingrese su Código de seguridad
-            </div>
-          </div>
-        </div>
-        <hr class="mb-4">
-        <button class="btn btn-primary btn-lg btn-block mb-3" type="submit">Finalizar compra</button>
+        <button class="mercadopago btn btn-primary btn-lg btn-block mb-3" type="submit">Abonar con MercadoPago</button>
       </form>
     </div>
   </div>

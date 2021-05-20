@@ -128,7 +128,6 @@ function popUpCarrito() {
       </h5>
     </div>
     <div class="cantidad">Cantidad: ${carrito[i].cantidad}</div>
-
   </div>
     `;
 
