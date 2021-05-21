@@ -45,12 +45,16 @@ function validar() {
             "Bearer TEST-3447450371918408-051923-94f74023a07a52dab35180bf62a90ed2-9504051",
         },
         body: JSON.stringify({
-          "items": productosMP}),
-        "auto_return":{},
-      }
+          items: productosMP,
+        }),
+        "back_urls": {
+        "success": "https://ltiraboschi.github.io/patagonia-tech/",
+      },
+      "auto_return": "approved",
+    }
     );
     const data = await response.json();
-    window.open(data.init_point);
+    window.open(data.init_point, "_blank");
   }
 
 
