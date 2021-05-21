@@ -48,14 +48,17 @@ async function mercadoPago() {
       },
       body: JSON.stringify({
         items: productosMP,
+        "back_urls": {
+          "success": "https://ltiraboschi.github.io/patagonia-tech/",
+               },
+        "auto_return": "all",
       }),
-      "back_urls": {
-        "success": "https://ltiraboschi.github.io/patagonia-tech/",
-      },
-      "auto_return": "approved",
+     
     }
   );
 
   const data = await response.json();
   window.open(data.init_point, "_blank");
+  vaciarCarrito()
+
 }
