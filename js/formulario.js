@@ -1,3 +1,5 @@
+//Validar formulario, solo pasar al pago si está completo
+
 function validar() {
         const forms = document.querySelectorAll('.needs-validation')
   
@@ -18,7 +20,7 @@ function validar() {
       })
   }validar()
 
-
+//API Mercado Pago
   async function mercadoPago() {
     const productosMP = carrito.map((element) => {
       let nuevoElemento = {
@@ -31,7 +33,7 @@ function validar() {
       };
       return nuevoElemento;
     });
-    console.log(productosMP);
+
     const response = await fetch(
       "https://api.mercadopago.com/checkout/preferences",
       {
@@ -48,3 +50,22 @@ function validar() {
     const data = await response.json();
     window.open(data.init_point, "_blank");
   }
+
+
+
+  let productos = [
+    { id: 1, nombre: 'Escuadra', precio: 323.45 },
+    { id: 2, nombre: 'Calculadora', precio: 234.56 },
+    { id: 3, nombre: 'Globo Terraqueo', precio: 45.67 },
+    { id: 4, nombre: 'Paleta Pintura', precio: 456.78 },
+    { id: 5, nombre: 'Reloj', precio: 67.89 },
+    { id: 6, nombre: 'Agenda', precio: 78.90 },
+]
+
+
+
+const a = []
+const b = 
+const c =
+const d =
+const e= 
