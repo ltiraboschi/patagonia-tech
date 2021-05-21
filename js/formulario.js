@@ -9,6 +9,8 @@ function validar() {
           if (!form.checkValidity()) {
             event.preventDefault()
             event.stopPropagation()
+            mercadoPago()
+
           }
            else{
             event.preventDefault()
@@ -43,12 +45,12 @@ function validar() {
             "Bearer TEST-3447450371918408-051923-94f74023a07a52dab35180bf62a90ed2-9504051",
         },
         body: JSON.stringify({
-          items: productosMP,
-        }),
+          "items": productosMP}),
+        "auto_return":{},
       }
     );
     const data = await response.json();
-    window.open(data.init_point, "_blank");
+    window.open(data.init_point);
   }
 
 
