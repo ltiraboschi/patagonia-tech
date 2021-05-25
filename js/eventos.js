@@ -45,5 +45,3 @@ $(".modal-contenedor").on("click",  () => {
 });
 
 
-//Pagar con Mercado Pago
-$(".mercadopago").on("click", () => validar())

@@ -11,15 +11,14 @@
 }
 
 @media (max-width: 700px) {
-#marcas{
-  display: none;
-}
+  #marcas {
+    display: none;
+  }
 }
 
 #titulo {
-  padding-top:35px;
+  padding-top: 35px;
 }
-
 
 .dropdown-item.active,
 .dropdown-item:active {
@@ -122,7 +121,7 @@
 }
 
 .btnComprar {
-  text-align:center;
+  text-align: center;
   width: 100%;
   box-sizing: border-box;
   border: none;
@@ -198,8 +197,6 @@
   z-index: 1;
 }
 
-
-
 .modal-active {
   opacity: 1;
   visibility: visible;
@@ -215,26 +212,25 @@
   flex-direction: column;
   background-color: white;
   height: 90vh;
-  min-width: 30rem;
+  min-width: 35rem;
   padding: 20px;
   margin-top: -100%;
 }
 
-     .bd-placeholder-img {
-        font-size: 1.125rem;
-        text-anchor: middle;
-        -webkit-user-select: none;
-        -moz-user-select: none;
-        -ms-user-select: none;
-        user-select: none;
-      }
+.bd-placeholder-img {
+  font-size: 1.125rem;
+  text-anchor: middle;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
 
-      @media (min-width: 768px) {
-        .bd-placeholder-img-lg {
-          font-size: 3.5rem;
-        }
-      }
-
+@media (min-width: 768px) {
+  .bd-placeholder-img-lg {
+    font-size: 3.5rem;
+  }
+}
 
 .modal-active .modal-carrito {
   margin-top: 0;
@@ -261,7 +257,7 @@
 }
 
 .avanzar {
-  width: 30rem;
+  width: 35rem;
   border: solid 1px;
   font-family: Montserrat, sans-serif;
   transition: all 0.4s ease 0s;
@@ -274,7 +270,7 @@
 }
 
 .vaciarCarrito {
-  width: 30rem;
+  width: 35rem;
   border: solid 1px;
   font-family: Montserrat, sans-serif;
   transition: all 0.4s ease 0s;
@@ -303,4 +299,15 @@
   .bd-placeholder-img-lg {
     font-size: 3.5rem;
   }
+}
+
+#terminada {
+  padding-top: 3rem;
+  padding-bottom: 27rem;
+  font-family: Montserrat, sans-serif;
+  background-color: lightgreen;
+}
+
+#terminada h3{
+  padding: 3em 0;
 }

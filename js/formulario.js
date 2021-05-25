@@ -2,18 +2,14 @@
 
 function validar() {
   const forms = document.querySelectorAll(".needs-validation");
-
   Array.prototype.slice.call(forms).forEach(function (form) {
     form.addEventListener(
       "submit",
       function (event) {
+        event.preventDefault();
         if (!form.checkValidity()) {
-          event.preventDefault();
           event.stopPropagation();
-          mercadoPago();
         } else {
-          event.preventDefault();
-          event.stopPropagation();
           mercadoPago();
         }
         form.classList.add("was-validated");
@@ -48,17 +44,15 @@ async function mercadoPago() {
       },
       body: JSON.stringify({
         items: productosMP,
-        "back_urls": {
-          "success": "https://ltiraboschi.github.io/patagonia-tech/",
-               },
-        "auto_return": "all",
+        back_urls: {
+          success: "https://ltiraboschi.github.io/patagonia-tech/comprafinalizada.html",
+        },
+        auto_return: "all",
       }),
-     
     }
   );
 
   const data = await response.json();
-  window.open(data.init_point, "_blank");
-  vaciarCarrito()
-
+  window.location.href = data.init_point;
+  vaciarCarrito();
 }
