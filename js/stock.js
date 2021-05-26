@@ -58,10 +58,10 @@ productosRaw.push(
 productosRaw.push(
   new Producto(
     4,
-    "Samsung S8",
-    30000,
+    "Samsung S10",
+    180000,
     "imagenes/samsungS8.jpg",
-    "El Xiaomi Redmi Note 9 es el rey en calidad/precio.",
+    "El Galaxy S10 tiene una pantalla de 6.1 pulgadas, y cuenta con el procesador Exynos 9820 de ocho núcleos con 8GB de RAM y 128GB.",
     "Samsung",
     40
   )
@@ -80,10 +80,10 @@ productosRaw.push(
 productosRaw.push(
   new Producto(
     6,
-    "iPhone 8",
-    70000,
+    "iPhone 11",
+    150000,
     "imagenes/iphone8.png",
-    "El Xiaomi Redmi Note 9 es el rey en calidad/precio.",
+    "El iPhone 11 Pro tiene un revolucionario sistema de tres cámaras que multiplica tu capacidad creativa y es fácil de usar.",
     "Apple",
     11
   )
@@ -116,7 +116,7 @@ productosRaw.push(
     "Macbook Pro",
     205000,
     "imagenes/macbookpro.jpg",
-    "Macbook Pro calidad/precio.",
+    "La MacBook Pro es la notebook más poderosa de Apple, creada para quienes se proponen nuevos desafíos y logran cosas imposibles.",
     "Apple",
     8
   )
